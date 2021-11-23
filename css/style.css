@@ -1,0 +1,1666 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-family: Lato, sans-serif;
+    font-size: calc(1em + 5vw);
+}
+
+p, a, li, label, button, h2, h3,h4,h5{
+    font-family: Lato, sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+section.section-img{
+    background: url(../imagens/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 100px 100px;
+}
+
+section.section-img p{
+    font-size: 34px;
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+section.section-form{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-form{
+    width: 70vw;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px ;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form h2{
+    width: 60%;
+}
+
+div.campo-medio{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+form input{
+    border: 1px solid #F28B0C;
+    border-radius: 10px;
+    width: 90%;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+form input:focus{
+    outline: 0;
+    border: 1px solid #F28B0C;
+}
+
+form input:nth-child(6){
+    height: 100px;
+}
+
+form button{
+    background-color: #F28B0C;
+    border-radius: 10px;
+    width: 90%;
+    height: 40px;
+    margin-top: 40px;
+    border: 1px solid black;
+    font-size: 20px;
+    color: white;
+}
+
+span.line-h{
+    width: 2px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0px 50px 0px 0px;
+}
+
+div.container-info{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 40%;
+    height: 400px;
+}
+
+div.item-contato{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+div.item-contato img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 800px){
+
+    section.section-form{
+        height: auto;
+        padding: 50px 0px;
+    }
+    div.container-form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    span.line-h{
+        width: 60vw;
+        height: 2px;
+        margin: 20px 0px;
+    }
+
+    div.container-info{
+        width: 80%;
+    }
+    
+    form{
+        width: 80%;
+    }
+}
+
+/*Sobre*/
+section.section-img-sobre{
+    background: url(../imagens/BannerSobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 100px 100px;
+}
+
+section.section-img-sobre p{
+    font-size: 34px;
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+section.section-sobre{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+article.article-sobre{
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.texto h2{
+    font-size: 48px;
+}
+
+div.imagem img{
+    width: 100%;
+}
+
+section.section-devs{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 20px 0;
+}
+
+div.faixa-devs{
+    width: 100vw;
+    height: 80px;
+    background-color: #FF9C07;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.faixa-devs h2{
+    font-size: calc(1em + 2vw);
+    margin-left: calc(50px + 1vw);
+}
+
+.section-devs h3{
+    font-size: 40px;
+}
+
+div.container-devs{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px 0px;
+}
+
+div.card-devs{
+    width: 35%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card-devs img{
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+}
+
+.card-devs h3{
+    font-size: calc(1em + 1vw );
+    text-align: center;
+}
+
+img.perfil{
+    border-radius: 100%;
+}
+
+@media screen and (max-width:600px) {
+
+    section.section-img-sobre{
+        padding: 100px 20px;
+    }
+
+    section.section-img-sobre p {
+        font-size: calc(1em + 2vw);
+    }
+
+    div.imagem{
+        display: none;
+    }
+
+    div.texto{
+        width: 100%;
+    }
+    
+    section.section-img{
+        padding: 100px 20px;
+    }
+
+    div.container-form{
+        width: 80vw;
+    }
+}
+
+/*Login e Cadastro*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    --secondary-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    --primary-background:#fe7e06;
+    --secondary-background:#f5973e;
+}
+
+.fundo-login{
+    background-color: #2e2e2e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: rgb(221, 217, 217);
+    max-width: 450px;
+    width: 100%;
+    box-shadow: var(--primary-shadow);
+    padding: 20px;
+    position:relative ;
+    background: #fff;
+}
+
+.card:before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--primary-background);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%) rotate(5deg);
+    border-radius: 5px;
+    animation-name: rotateRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.card:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--secondary-background);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%) rotate(-5deg);
+    border-radius: 5px;
+    animation-name: rotateLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotateRight{
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(5deg);
+    }
+}
+
+@keyframes rotateLeft{
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(-5deg);
+    }
+}
+
+
+.card_title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form_input{
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    padding:20px 5px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: var(--secondary-shadow);
+    outline: none;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.form_input:hover{
+    background-color: #eef2ff;
+}
+
+button.form_button-login{
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    padding: 20px 0px;
+    border: none;
+    background-color: #21266d;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button.form_button-login a{
+    color: white;
+    text-decoration: none;
+}
+
+.form_button-login:hover{
+    letter-spacing: 1px;
+}
+
+.card_footer{
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_footer a{
+    transition: 0.2s;
+}
+.card_footer a:hover{
+    letter-spacing: 0.5px;
+}
+
+.card_footer a:first-child{
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width:500px){
+    .card:before{
+        width:90%
+    }
+    .card:after{
+        width:90%
+    }
+}
+
+form.form-login{
+    width: 100%; 
+     display: block; 
+}
+
+/*João*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #D2D2D2 !important;
+}
+.ajuste_capa {
+    height: 38vw;
+    background-image: url(../imagens/bolachas.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+hr {
+    margin-top: 1vw !important;
+    margin-bottom: 1vw !important;
+}
+
+.center_catalog {
+    width: 80%;
+    margin: auto;
+}
+.ajuste_semana {
+    height: 32vw;
+    background-color: white;
+    margin-top: 5vw;
+}
+.semana_card {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.tit_card {
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+svg {
+    width: 2vw !important;
+}
+.img_cappuccino {
+    background-image: url(../imagens/cappuccino.jpg);
+    border: 2px solid black;
+    height: 23vw;
+    width: 38vw;
+}
+.frase_card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.frase_centro {
+    width: 60%;
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin: auto;
+    text-align: justify;
+}
+.b_f {
+    width: 31%;
+    text-align: center;
+    margin: auto;
+    background-color: #F2C6A0;
+    height: 4vw;
+    font-size: 2vw;
+    font-weight: 700;
+    box-shadow: 1px 2px 6px;
+    border-radius: 0.4vw;
+}
+.coment {
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.coment_2 {
+    margin-left: 5vw;
+    display: flex;
+}
+.ajuste_catalog {
+    background-color: bisque;
+    margin: auto;
+    height: 25vw;
+}
+.ajuste_catalog_white {
+    background-color: white;
+    margin: auto;
+    height: 28vw;
+}
+.ajuste_catalog_white h2 {
+    font-weight: bolder;
+    font-size: 2.6vw;
+    margin-left: 2vw;
+}
+.ajuste_catalog_yellow {
+    background-color: #f28b0c;
+    margin: auto;
+    height: 28vw;
+}
+.ajuste_catalog_yellow h2 {
+    font-weight: bolder;
+    font-size: 2.6vw;
+    margin-left: 2vw;
+}
+.ajuste_catalog h2 {
+    font-weight: bolder;
+    font-size: 2.6vw;
+}
+.center_text {
+    text-align: center;
+}
+.margin-center {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.apresentacao {
+    width: 20vw;
+    height: 25vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.apresentacao p {
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+.apresentacao h2 {
+    font-size: 2vw;
+    height: 3vw;
+}
+.todo_dia {
+    font-weight: bold; 
+    font-size: 1.8vw !important; 
+    height: 12vw;
+}
+.container-fluid { 
+    padding-right: 0px !important; 
+    padding-left: 0px !important;  
+}
+.img_capa2 {
+    height: 22vw;
+    width: 16vw;
+    background-image: url(../imagens/prato.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    margin-left: 46vw;
+    border: 4px solid black;
+    box-shadow: 5px 4px 7px;
+}
+.imagens {
+    display: flex !important;
+    width: 100% !important;
+    height: 70% !important;
+    margin-top: 1vw !important;
+}
+.bordas_img {
+    border: 2px solid black;
+    height: 95%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 2vw 0vw 2vw;
+    align-items: center;
+}
+.bordas_img_02 {
+    border: 2px solid black;
+    height: 100%;
+    width: 15vw !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0.3vw 2vw 0vw 2vw;
+    border-radius: 1vw;
+}
+.bordas_img h3 { 
+    text-align: center; 
+    border: 2px solid white; 
+    padding: 11px; 
+    color: white; 
+    width: 83%; 
+    font-size: 1.1vw; 
+}
+.bordas_img_02 h3 {
+    text-align: center;
+    border: 2px solid white;
+    padding: 9px;
+    color: white;
+    width: 73%;
+    background: linear-gradient(#0000008a, #00000086);
+    font-size: 0.9vw;
+}
+.bordas_img p {
+    text-align: center;
+    color: white;
+    font-size: 0.8vw;
+    margin-top: 4vw;
+}
+.responsive_img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img01 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,.30)100%), url('../imagens/risotto.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img02 {
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), url('../imagens/taco.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img03 {
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), url('../imagens/sushi.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img04 {
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), url('../imagens/pad_thai.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img05 {
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), url('../imagens/alfajor.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img06 {
+    background-image: url(../imagens/torta_morango.jpg);
+}
+.img07 {
+    background-image: url(../imagens/gelatina.jpg);
+}
+.img08 {
+    background-image: url(../imagens/iogurte_vegano.jpg);
+}
+.img09 {
+    background-image: url(../imagens/protifelores.png);
+}
+.img10 {
+    background-image: url(../imagens/mango_chicken.jpg);
+}
+.img11 {
+    background-image: url(../imagens/salada_grega.jpg);
+}
+.img12 {
+    background-image: url(../imagens/omelete_forno.png);
+}
+.img13 {
+    background-image: url(../imagens/tabule.png);
+}
+.img14 {
+    background-image: url(../imagens/detox.jpg);
+}
+.img15 {
+    background-image: url(../imagens/vitamina.jpg);
+}
+.img16 {
+    background-image: url(../imagens/bolo_frango.png);
+}
+.img17 {
+    background-image: url(../imagens/ovo_omelete.png);
+}
+.img18 {
+    background-image: url(../imagens/pasta_amendoim.jpg);
+}
+.img19 {
+    background-image: url(../imagens/oleo_coco.jpg);
+}
+.img20 {
+    background-image: url(../imagens/shoyu.png);
+}
+.img21 {
+    background-image: url(../imagens/frango.png);
+}
+.img_livro {
+    background-image: url(../imagens/learn_more.jpg);
+}
+
+.teste {
+    width: 500px;
+    height: 500px;
+}
+.levanta:hover {
+    animation: destaca 0.5s ease-in-out forwards;
+    position: relative;
+    margin-top: -50px;
+    transition-duration: 0.7s;
+}
+
+@keyframes destaca {
+    to {
+
+    }
+}
+.slick-track {
+    height: 98% !important;
+    /*width: 100% !important;*/
+}
+.slick-prev {
+    background-image: url(../imagens/Arrow\ esquerda.png);
+    background-color: rgba(0, 0, 0, 0.37);
+    height: 2.9vw;
+    width: 2vw;
+    margin-top: 7vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 0px;
+}
+.slick-next {
+    background-image: url(../imagens/Arrow\ direita.png);
+    background-color: rgba(0, 0, 0, 0.37);
+    height: 2.9vw;
+    width: 2vw;
+    margin-top: 7vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 0px;
+}
+.pelo_brasil {
+    height: 32vw;
+    background-image: url(../imagens/fundo_arvore.png);
+}
+.pelo_brasil a {
+    text-decoration: white;
+}
+.pelo_brasil h2 {
+    text-align: center;
+    background-color: white;
+    width: 22%;
+    margin: auto;
+    font-weight: revert;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7vw;
+}
+.pelo_brasil h3 {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+}
+.coment p {
+    margin-left: 1vw;
+
+}
+div.pelo_brasil h3 :hover {
+    text-decoration: none;
+    color: white; 
+}
+.bordas_img_03 {
+    width: 15vw !important;
+    border: 2px solid white;
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0.3vw 0.5vw 0vw 0.5vw;
+    color: white;
+}
+.img22 {
+    background-image: url(../imagens/SUDESTE_ROXO.jpg);
+}
+.img23 {
+    background-image: url(../imagens/NORDESTE_VERMELHO.jpg);
+}
+.img24 {
+    background-image: url(../imagens/norte_verde.png);
+}
+.img25 {
+    background-image: url(../imagens/sul_azul.png);
+}
+.img26 {
+    background-image: url(../imagens/CENTRO_MARROM.jpg);
+}
+/*
+footer {
+    height: 27vw;
+    background-color: #f28b0c;
+    width: 100%;
+    color: white;
+}*/
+/*.centro_pe {
+    width: 78vw;
+    margin: auto;
+    display: flex;
+}*/
+/*.part_logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.part_logo p {
+    font-size: 1.1vw;
+    height: 5vw;
+    margin-bottom: 0.5vw;
+    margin-top: 1vw;
+}*/
+/*.logo_img {
+    width: 7vw;
+}*/
+/*.logo_div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 4vw;
+}*/
+/*.navegacao {
+    display: flex;
+    width: 50%;
+}
+.navegacao h4 {
+    font-size: 1.1vw;
+    margin-bottom: 0.9vw;
+}
+.navegacao p {
+    font-size: 0.8vw;
+    margin-bottom: 0.4vw;
+}*/
+/*.part_2 { 
+    padding-right: 3vw; 
+    width: 35%; 
+    margin-top: 9vw;
+} 
+.part_1 { 
+    padding-right: 3vw; 
+    width: 38%; 
+    margin-top: 9vw;
+} 
+.part_3 {
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}*/
+/*.cadastra {
+    padding: 7px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9vw;
+    text-align: center;
+    width: 100%;
+}
+.cadastra:hover {
+    background-color: white;
+    color: #f28b0c;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}*/
+.regula {
+    padding: 7px;
+    border-radius: 20px;
+    border: 2px solid #f28b0c;
+    color: #f28b0c;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.regula:hover {
+    transition-duration: 0.5s;
+    background-color:#f28b0c;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.img22:hover {
+    text-decoration: none;
+}
+.img23:hover {
+    text-decoration: none;
+}
+.img24:hover {
+    text-decoration: none;
+}
+.img25:hover {
+    text-decoration: none;
+}
+.img26:hover {
+    text-decoration: none;
+}
+.sd:hover {
+    color: rgb(235, 172, 235);
+    transition-duration: 0.3s;
+}
+.su:hover {
+    color: rgb(151, 206, 228);
+    transition-duration: 0.3s;
+}
+.nd:hover {
+    color: rgb(224, 136, 136);
+    transition-duration: 0.3s;
+}
+.no:hover {
+    color: rgb(166, 228, 151);
+    transition-duration: 0.3s;
+}
+.ce:hover {
+    color: rgb(228, 182, 151);
+    transition-duration: 0.3s
+}
+
+
+/*
+
+
+
+
+
+Segunda página
+
+
+
+
+
+
+*/
+.ajuste_capa2
+{
+    height: 38vw;
+    background-image: url(../imagens/capa_doce.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ajuste_capa3
+{
+    height: 38vw;
+    background-image: url(../imagens/cap_salada.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ajuste_capa4
+{
+    height: 38vw;
+    background-image: url(../imagens/capa_fitness.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img_capa_doce
+{
+        height: 22vw;
+        width: 16vw;
+        background-image: url(../imagens/capa_doce_2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: right;
+        margin-left: 46vw;
+        border: 4px solid black;
+        box-shadow: 5px 4px 7px;
+}
+.img_capa_salada
+{
+        height: 22vw;
+        width: 16vw;
+        background-image: url(../imagens/capa_salada_2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: right;
+        margin-left: 46vw;
+        border: 4px solid black;
+        box-shadow: 5px 4px 7px;
+}
+.img_capa_fitness
+{
+        height: 22vw;
+        width: 16vw;
+        background-image: url(../imagens/capa_fitness_2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: right;
+        margin-left: 46vw;
+        border: 4px solid black;
+        box-shadow: 5px 4px 7px;
+}
+.ajuste_catalog_preparo
+{
+    height: 100vw;
+    background-color: white;
+    
+}
+.titulo_preparo
+{
+    margin-left: 4vw;
+    font-size: 3vw;
+}
+.ingredientes_layout 
+{
+    display: flex;
+}
+.torta_morango
+{
+    height: 20vw;
+    width: 20vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 3vw;
+    border: 0.3vw solid #f28b0c;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.torta_morango h3
+{
+    border: 0.1vw solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.438);
+    font-size: 1.7vw;
+}
+.ingredientes_preparo
+{
+    width: 50vw;
+}
+.nome_preparo
+{
+    background-color: #f28b0c;
+    width: 100%;
+    margin-left: 2vw;
+    font-size: 2.5vw;
+    margin-bottom: 0.5vw;
+}
+.texto_preparo
+{
+    margin-left: 2vw;
+    color: black;
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+.ajuste_ingre{
+    display: flex;
+    font-weight: 450;
+}
+.ajuste_ingre1
+{
+    width: 50%;
+}
+.ajuste_ingre2
+{
+    margin-left: 2vw;
+}
+.ingre_tit
+{
+    margin-left: 2vw;
+}
+.ingre_tit h4 
+{
+    font-size: 2vw;
+}
+.ajuste_ingre p
+{
+    font-size: 1vw;
+    margin-bottom: 0.8vw;
+}
+.button_preparo
+{
+    margin-left: 35vw;
+    margin-top: 3vw;  
+    width: 10vw;
+    background-color: #f4511e;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1vw;
+    padding: 10px;
+}
+ 
+  .apresentacao_white h2 {
+    font-size: 2vw;
+    height: 3vw;
+    color: white;
+}
+.apresentacao_white p {
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .ajuste_catalog_preparo {
+        height: 105vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+
+
+    .ajuste_catalog_preparo {
+        height: 112vw;
+    }
+    .button_preparo {
+        margin-left: 42.5vw;
+    }
+
+
+
+
+    .ajuste_semana {
+        height: 40vw;
+    }
+    .semana_card {
+        height: 58%;
+    }
+
+    /*Centro*/
+
+    .center_catalog {
+        width:100%
+    }
+    .pelo_brasil { 
+        height: 40.75vw; 
+    } 
+    .ajuste_catalog_white {
+        height: 43.25vw; 
+    }
+    .ajuste_catalog_yellow { 
+        height: 43.25vw;
+    }
+    .bordas_img_03 {
+        margin: 0.3vw 1.5vw 0vw 1.5vw;
+        width: 17vw !important;
+    }
+    
+    .ajuste_catalog {
+        height: 36vw;
+    }
+    .ajuste_catalog h2 {
+        font-size: 3.6vw;
+    }
+    .ajuste_catalog_white h2 {
+        font-size: 3.6vw;
+    }
+    .ajuste_catalog_yellow h2 {
+        font-size: 3.6vw;
+    }
+    .bordas_img_02 {
+        width: 20vw !important;
+    }
+
+
+
+
+    /*rodape*/
+    .part_3 { 
+        width: 62px; 
+    } 
+    /*.cadastra { 
+        padding: 3px; 
+    }*/ 
+    .regula { 
+        padding: 3px; 
+    } 
+    /*.navegacao { 
+        width: 60%; 
+    } */
+    /*.logo_div { 
+        width: 40%; 
+    }*/
+    
+
+    /*Footer*/
+
+    .slick-track {
+        height: 98% !important;
+        /*width: 121vw !important;*/
+    }
+
+    .slick-next {
+        margin-top: 13vw;
+    }
+    .slick-prev {
+        margin-top: 13vw;
+    }
+    .img_cappuccino {
+        margin-left: 7vw;
+    }
+    .tit_card {
+        margin-left: 7vw;
+    }
+    .coment {
+        display: flex;
+        margin-left: 7vw;
+        height: 2vw;
+    }
+    .coment p {
+        height: 2vw;
+    }
+    .apresentacao { 
+        width: 80vw; 
+    }
+    .img_capa2 { 
+        margin-left: -16vw; 
+    }
+    .img_capa_doce
+    {
+        margin-left: -16vw;
+    }
+    .img_capa_salada
+    {
+        margin-left: -16vw;
+    }
+    .img_capa_fitness
+    {
+        margin-left: -16vw;
+    }
+
+
+    /*
+
+
+
+
+
+
+
+
+
+
+    segunda parte
+
+
+
+
+
+
+    */
+
+    .ingredientes_preparo {
+        width: 71vw;
+    }
+    .button_preparo
+    {
+        width: 14vw;
+    }
+}
+
+
+
+@media screen and (max-width: 580px) {
+
+
+    .ajuste_catalog_preparo {
+        height: 122vw;
+    }
+}
+@media screen and (max-width: 490px) {
+
+
+    .ajuste_catalog_preparo {
+        height: 128vw;
+    }
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+/*cabecalho*/
+
+    .button_preparo{
+        display: none;
+    }
+    .ajuste_capa { 
+        height: 80vw; 
+    } 
+    .ajuste_capa2 { 
+        height: 80vw; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .ajuste_capa3 { 
+        height: 80vw; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .ajuste_capa4 { 
+        height: 80vw; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_capa2 { 
+        display: none 
+    }
+    .img_capa_doce
+    {
+        display: none;
+    }
+    .img_capa_salada
+    {
+        display: none;
+    }
+    .img_capa_fitness
+    {
+        display: none;
+    }
+    .margin-center { 
+        margin: auto; 
+        width: 100%; 
+        display: flex; 
+        align-items: center; 
+        height: 45vw; 
+        background-color: #0000005c; 
+    } 
+    .ajuste_capa { 
+        height: 80vw; 
+        display: flex; 
+        justify-content: center; 
+    } 
+    .apresentacao p { 
+        font-weight: 900; 
+        font-size: 2vw;
+        color: ghostwhite; 
+        text-align: center;
+    } 
+    .apresentacao h2 { 
+        font-size: 5vw; 
+        height: 10vw; 
+        color: white; 
+    } 
+    .apresentacao {
+        width: 100%; 
+        justify-content: center; 
+        align-items: center; 
+        height: 37vw;
+    }
+    .todo_dia { 
+        font-size: 3.8vw !important;
+        margin-top: 1vw; 
+    }
+
+/*Parte da semana*/
+
+
+
+    .semana_card { 
+        height: 86%; 
+        justify-content: normal; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .tit_card { 
+        margin-left: 1vw; 
+        font-size: 4vw; 
+        text-align: center; 
+    } 
+    .ajuste_semana { 
+        height: 134vw; 
+        flex-direction: column; 
+    } 
+    .frase_centro { 
+        width: 100%; 
+        font-size: 2.5vw; 
+        text-align: justify; 
+    } 
+    .img_cappuccino { 
+        height: 252vw; 
+        width: 62vw; 
+        margin-left: 0px;
+    }
+    .frase_card {
+        width: 60%;
+    }
+    .coment {
+        display: none;
+    }
+    .b_f { 
+        width: 50%; 
+        text-align: center;  
+        height: 10vw; 
+        font-size: 5vw; 
+    }
+    svg {
+        width: 3vw !important;
+    }
+    .levanta:hover {
+        animation: none;
+        position:relative;
+        margin-top: 4vw;
+        transition-duration: 0s;
+    }
+    .ajuste_catalog h2 {
+        font-size: 7.6vw;
+    }
+    .bordas_img h3 {
+        font-size: 5.1vw;
+        margin-top: 2vw;
+        background-color: #0000005c;
+     }
+    .bordas_img p {
+        font-size: 4.8vw;
+        margin-top: 14vw;
+    }
+    .bordas_img_02 h3 {
+        font-size: 4.9vw;
+    }
+     /*Parte Pelo Mundo*/
+    .img22 {
+        height: 27vw !important;
+    }
+    .img23 {
+        height: 27vw !important;
+    }
+    .img24 {
+        height: 27vw !important;
+    }
+    .img25 {
+        height: 27vw !important;
+    }
+    .img26 {
+        height: 27vw !important;
+    }
+    .imagens {  
+        width: 100% !important; 
+        height: 95% !important; 
+        flex-direction: column; 
+        align-items: center; 
+        } 
+    .ajuste_catalog { 
+        height: 400vw; 
+    }
+
+    .bordas_img { 
+        height: 19%; 
+        width: 60%; 
+        margin-top: 4vw; 
+    } 
+
+    /*Receitas*/
+
+    .ajuste_catalog_white {
+        height: 170.25vw;
+    }
+    .ajuste_catalog_white h2 {
+        font-size: 11.6vw;
+        text-align: center;
+    }
+    .ajuste_catalog_yellow {
+        height: 170.25vw;
+    }
+    .ajuste_catalog_yellow h2 {
+        font-size: 11.6vw;
+        text-align: center;
+    }
+    .slick-list {
+        height: 80% !important;
+    }
+    .slick-track {
+        width: 100vw !important;
+    }
+    .bordas_img_02 {
+        width: 98vw !important;
+    }
+    /*Pelo Brasil*/
+
+
+    .bordas_img_03 {
+     height: 17%;  
+     width: 99% !important;
+     background-size: 125% 330% !important;
+     background-position-y: -20vw;
+     margin: 0px !important;
+    }
+    .pelo_brasil {
+        height: 150.75vw;
+    }
+    .pelo_brasil h3 {  
+        font-size: 9.5vw; 
+    }
+    .pelo_brasil h2 {
+        background-color: rgba(255, 255, 255, 0.767);
+        width: 63%;
+        height: 90%;
+        font-size: 5.7vw;
+    }
+    .div_brasil {
+        height: 13vw;
+        display: flex;
+    }
+    /*Footer*/
+
+    /*footer {
+        height: 60vw;
+    }*/
+    /*.logo_img{
+        display: none;
+    }*/
+    .apaga{
+        display: none;
+    }
+    /*.f2{
+        display: none;
+    }*/
+    /*.part_1 p{
+        display: none;
+    }
+    .part_2 p{
+        display: none;
+    }*/
+    /*.centro_pe {
+        flex-direction: column;
+    }*/
+    /*.navegacao {
+        display: flex;
+        flex-direction: column;
+    }*/
+    /*.logo_div {
+        width: 100%;
+    }*/
+    /*.part_logo p{
+        font-size: 3.1vw;
+        height: 5vw;
+        border-bottom: 1px;
+        border-color: #1b1b1b91;
+        border-bottom-style: solid;
+    }*/
+    /*.part_1 {
+        padding-right: 0vw;
+        width: 100%;
+        margin-top: 2vw;
+        height: 5vw;
+        border-bottom: 1px;
+        border-color: #1b1b1b91;
+        border-bottom-style: solid;
+    }
+    .part_2 {
+        padding-right: 0vw;
+        width: 100%;
+        margin-top: 2vw;
+        height: 5vw;
+        border-bottom: 1px;
+        border-color: #1b1b1b91;
+        border-bottom-style: solid;
+    }*/
+    /*.navegacao {
+        width: 100%;
+        height: 40vw;
+    }*/
+    .part_3{
+        margin: auto;
+        margin-top: 3vw;
+        width: 27vw;
+    }
+    /*.navegacao h4 {
+        font-size: 3.1vw;
+    }*/
+    /*.cadastra {
+        padding: 1.8vw;
+        font-size: 2.8vw !important;
+    }*/
+    .regula {
+        padding: 2.8vw;
+        font-size: 1.8vw  !important;
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+    .ajuste_catalog_preparo {
+        height: 146vw;
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+

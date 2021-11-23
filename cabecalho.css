@@ -1,0 +1,111 @@
+/*Formatação de fontes*/
+p, a, li, label, button, h2, h3,h4,h5{
+    font-family: Lato, sans-serif;
+}
+
+/*Modal*/
+.container-modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(88, 88, 88, 0.418);
+    display: none;
+    justify-content: center;
+}
+
+.modal{
+    position: relative;
+    width: 70vw;
+    height: 300px;
+    background: white;
+    top:18vh;
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius : 0px 0px 10px 10px;
+}
+
+.modal h3{
+    margin-bottom: 20px;
+}
+
+.modal ol li{
+    margin-bottom: 10px;
+}
+
+@keyframes modal {
+    from{
+        opacity: 0;
+    }fo{
+        opacity: 1;
+    }
+}
+
+.mostra{
+    display: flex;
+    animation: modal .4s linear;
+}
+
+/*Cabeçalho*/
+header.cabecalho{
+    width: 100vw;
+    height: 15vh;
+    padding-top: 20px;
+    background-color: #F28B0C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.busca{
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 2px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.busca img{
+    width: 25px;
+    padding: 2px;
+    background-color: #F28B0C;
+    border-radius: 100%;
+}
+
+.busca input{
+    width: 100%;
+    border: none;
+}
+
+.busca input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.cabecalho ul li{
+    display: inline;
+    margin-right: 10px;
+    color: white;
+    pointer-events: visible;
+}
+
+nav.nav-receitas{
+    width: 100vw;
+    height: 5vh;
+    margin-top: 2vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.nav-receitas ul li{
+    color:black;
+}
